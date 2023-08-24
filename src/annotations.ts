@@ -52,5 +52,10 @@ export const annotations = () => {
   /*
   output of the JSON.parse() depend on the input 
   So, TS cannot predict type of output. Hence showing 'any'
+
+  This can be fixed by adding the type for the output variable
   */
+
+  const position: { x: number; y: number } = JSON.parse(json);
+  // on hover, can see type of the var position
 };
