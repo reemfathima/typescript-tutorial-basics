@@ -5,11 +5,7 @@ import { annotations } from './src/annotations';
 import { inference } from './src/inference';
 
 // todo();
-
-// types();
-
+//types()
 // typesExamples();
-
-// annotations();
-
-inference();
+annotations();
+// inference();

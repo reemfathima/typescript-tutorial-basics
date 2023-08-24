@@ -40,4 +40,17 @@ export const annotations = () => {
     // function type:- (arg: type) => return_type (if return nothing, use 'void')
     console.log(i);
   };
+
+  /*
+  when to use annotations:
+  1) Function that returns the 'any' type
+  */
+
+  const json = '{"x":10, "y":20}';
+  const coordinates = JSON.parse(json); //hover on corrdinates, show type 'any'
+
+  /*
+  output of the JSON.parse() depend on the input 
+  So, TS cannot predict type of output. Hence showing 'any'
+  */
 };
