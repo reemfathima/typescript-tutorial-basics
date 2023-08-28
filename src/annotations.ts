@@ -45,6 +45,7 @@ export const annotations = () => {
   when to use annotations:
   1) Function that returns the 'any' type
   2) When we declare a variable on one line and initialize it later
+  3) Variable type cannot be inferred correctly
   */
 
   // #1
@@ -65,10 +66,27 @@ export const annotations = () => {
   let words = ['red', 'green', 'blue'];
   let foundWord;
 
-  foundWord = words.find((word) => word === 'green');
+  foundWord = words.includes('green');
+  console.log(foundWord);
+
   /* 
   To fix this add a type or initialize with a default value
   let foundWord: boolean or
   let foundWord = false 
+  */
+
+  // #3
+  let numbers = [-10, -1, 12];
+  let numberAboveZero = false; // type inferred as boolean -> but has to be boolean | number
+
+  numbers.map((number) => {
+    if (number > 0) numberAboveZero = number;
+  });
+  console.log(numberAboveZero);
+
+  /*
+  in such cases where type cannot be inferred correctly, 
+  it has to be defined. eg:
+  let numberAboveZero: boolean | number = false;
   */
 };
