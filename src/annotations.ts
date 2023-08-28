@@ -44,8 +44,10 @@ export const annotations = () => {
   /*
   when to use annotations:
   1) Function that returns the 'any' type
+  2) When we declare a variable on one line and initialize it later
   */
 
+  // #1
   const json = '{"x":10, "y":20}';
   const coordinates = JSON.parse(json); //hover on corrdinates, show type 'any'
 
@@ -58,4 +60,15 @@ export const annotations = () => {
 
   const position: { x: number; y: number } = JSON.parse(json);
   // on hover, can see type of the var position
+
+  // #2
+  let words = ['red', 'green', 'blue'];
+  let foundWord;
+
+  foundWord = words.find((word) => word === 'green');
+  /* 
+  To fix this add a type or initialize with a default value
+  let foundWord: boolean or
+  let foundWord = false 
+  */
 };
