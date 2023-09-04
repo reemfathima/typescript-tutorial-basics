@@ -6,6 +6,7 @@ import { inference } from './src/inference';
 import { functions } from './src/functions';
 import { objects } from './src/objects';
 import { arrays } from './src/arrays';
+import { tuples } from './src/tuples';
 
 // todo();
 //types()
@@ -14,4 +15,5 @@ import { arrays } from './src/arrays';
 // inference();
 // functions();
 // objects();
-arrays();
+// arrays();
+tuples();
