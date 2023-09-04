@@ -4,11 +4,12 @@ import { types } from './src/types';
 import { annotations } from './src/annotations';
 import { inference } from './src/inference';
 import { functions } from './src/functions';
+import { objects } from './src/objects';
 
 // todo();
 //types()
 // typesExamples();
 // annotations();
 // inference();
-
-functions();
+// functions();
+objects();
