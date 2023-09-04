@@ -54,8 +54,10 @@ export const interfaces = () => {
   };
 
   logVehicle(oldCivic); // No Error
+  /*
   logVehicle(newCivic); // Types of 'broken' are incompatible.
   logVehicle(myCivic); // Property 'broken' is missing
+  */
 
   interface Reportable {
     summary(): string;
