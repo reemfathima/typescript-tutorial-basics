@@ -7,6 +7,7 @@ import { functions } from './src/functions';
 import { objects } from './src/objects';
 import { arrays } from './src/arrays';
 import { tuples } from './src/tuples';
+import { interfaces } from './src/interfaces';
 
 // todo();
 //types()
@@ -16,4 +17,5 @@ import { tuples } from './src/tuples';
 // functions();
 // objects();
 // arrays();
-tuples();
+// tuples();
+interfaces();
