@@ -5,6 +5,7 @@ import { annotations } from './src/annotations';
 import { inference } from './src/inference';
 import { functions } from './src/functions';
 import { objects } from './src/objects';
+import { arrays } from './src/arrays';
 
 // todo();
 //types()
@@ -12,4 +13,5 @@ import { objects } from './src/objects';
 // annotations();
 // inference();
 // functions();
-objects();
+// objects();
+arrays();
